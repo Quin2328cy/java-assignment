@@ -25,6 +25,7 @@ public class MidTermPartB {
 
 
         // Question  2
+        System.out.println();
         System.out.println(arrangeCoins(10));
 
 
