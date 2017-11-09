@@ -298,4 +298,4 @@ class Hangman
             return yesNo;
         }
     }
-}
+} 
