@@ -202,6 +202,7 @@ class Anagrams
         char[] arr2 = s2.toCharArray();
 
         char temp1,temp2;
+        // This sorting algorithm is very time consuming, but nice try!
         for(int i=0;i<arr1.length-1;i++){
             for(int j=0;j<arr1.length-i-1;j++){
                 if(arr1[j+1]<arr1[j]){
@@ -290,6 +291,7 @@ class Calculator
         double deta = b * b - 4 * a * c;
         double[] result = new double[2];
         if (deta >= 0) {
+            // What if a == 0?
             double x1 = (-b + Math.sqrt(deta)) / (2 * a);
             double x2 = (-b - Math.sqrt(deta)) / (2 * a);
             result[0] = x1;
