@@ -58,6 +58,7 @@ public class MidTermPartB {
         {
             if(i%2==0)
             {
+                // We cannot guarantee n - i - 1 is a even number, score -5
                 arr3[i] = nums[n-i-1];
             }
             else
@@ -90,7 +91,8 @@ public class MidTermPartB {
                 min = nums[i];
         }
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) 
+            // No need to add if check, since if min == nums[i], then res += 0
             if (min != nums[i])
                 res += nums[i] - min;
         }
